@@ -1,0 +1,7 @@
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\PackageExpress\obj\Debug\PackageExpress.exe
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\PackageExpress\obj\Debug\PackageExpress.csproj.AssemblyReference.cache
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\PackageExpress\obj\Debug\PackageExpress.csproj.CoreCompileInputs.cache
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\PackageExpress\bin\Debug\PackageExpress.exe.config
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\PackageExpress\bin\Debug\PackageExpress.exe
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\PackageExpress\bin\Debug\PackageExpress.pdb
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\PackageExpress\obj\Debug\PackageExpress.pdb
