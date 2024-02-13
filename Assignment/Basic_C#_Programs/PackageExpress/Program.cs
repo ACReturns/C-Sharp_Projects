@@ -35,7 +35,7 @@ namespace PackageExpress
             string packageLength = Console.ReadLine();
             int pkgLength = Convert.ToInt32(packageLength);
 
-            if (pkgWidth > maxLimit || pkgHeight > maxLimit || pkgLength > maxLimit)
+            if ((pkgWidth + pkgHeight + pkgLength) > maxLimit)
             {
                 Console.WriteLine("Package too big to be shipped via Package Express.");
                 Console.ReadLine();
