@@ -11,17 +11,17 @@ namespace ConsoleAppAssignment
         static void Main()
         {
             // Part 1
-            string[] insectNames = new string[] { "coconut", "orange", "banana", "apple", "pumpkin" };
+            string[] fruitNames = new string[] { "coconut", "orange", "banana", "apple", "pumpkin" };
 
             Console.WriteLine("Please enter your favorite flavor");
             string userBrand = Console.ReadLine();
 
-            for (int i = 0; i < insectNames.Length; i++)
+            for (int i = 0; i < fruitNames.Length; i++)
             {
-                if (i < insectNames.Length)
+                if (i < fruitNames.Length)
                 {
-                    insectNames[i] = insectNames[i] + " " + userBrand;
-                    Console.WriteLine(insectNames[i]);
+                    fruitNames[i] = fruitNames[i] + " " + userBrand;
+                    Console.WriteLine(fruitNames[i]);
                 }
             }
             Console.WriteLine("Part 1 Completed");
@@ -76,18 +76,18 @@ namespace ConsoleAppAssignment
             Console.ReadLine();
 
             // Part 5
-            List<string> listDuex = new List<string>() { "hat", "tie", "watch", "jacket", "tie" };
+            List<string> attireList = new List<string>() { "hat", "tie", "watch", "jacket", "tie" };
             Console.WriteLine("What would you like to wear today?");
             string userThreads = Console.ReadLine().ToLower();
 
-            for (int i = 0; i < listDuex.Count; i++)
+            for (int i = 0; i < attireList.Count; i++)
             {
-                if (userThreads == listDuex[i].ToString())
+                if (userThreads == attireList[i].ToString())
                 {
-                    Console.WriteLine("The index for " + listDuex[i] + " is " + i);
+                    Console.WriteLine("The index for " + attireList[i] + " is " + i);
                     break;
                 }
-                else if (!listDuex.Contains(userThreads))
+                else if (!attireList.Contains(userThreads))
                 {
                     Console.WriteLine(userThreads + " doesn't exist in the list");
                     break;
