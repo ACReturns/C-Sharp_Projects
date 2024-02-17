@@ -58,15 +58,15 @@ namespace ConsoleAppAssignment
             Console.WriteLine("What would you like to order to eat?");
             string userOrder = Console.ReadLine().ToLower();
 
-            foreach (var food in fastFood)
+            for (int i = 0; i < fastFood.Count; i++)
             {
-                if (food == userOrder)
+                if (fastFood[i] == userOrder)
                 {
-                    Console.WriteLine("You ordered a " + food);
+                    Console.WriteLine("The index number for " + fastFood[i] + " is " + i);
                     break;
                 }
 
-                if (food == fastFood.LastOrDefault() && food != userOrder)
+                if (fastFood[i] == fastFood.LastOrDefault() && fastFood[i] != userOrder)
                 {
                     Console.WriteLine("It looks like you ordered something not on the menu");
                 }
@@ -82,10 +82,11 @@ namespace ConsoleAppAssignment
 
             for (int i = 0; i < attireList.Count; i++)
             {
-                if (userThreads == attireList[i].ToString())
+                Console.WriteLine("The index for " + attireList[i] + " is " + i);
+
+                if (userThreads == attireList[i])
                 {
-                    Console.WriteLine("The index for " + attireList[i] + " is " + i);
-                    break;
+                    Console.WriteLine("Your input matches up with the item " + attireList[i]);
                 }
                 else if (!attireList.Contains(userThreads))
                 {
