@@ -1,0 +1,7 @@
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\MainMethodAssignment\bin\Debug\MainMethodAssignment.exe.config
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\MainMethodAssignment\bin\Debug\MainMethodAssignment.exe
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\MainMethodAssignment\bin\Debug\MainMethodAssignment.pdb
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\MainMethodAssignment\obj\Debug\MainMethodAssignment.csproj.AssemblyReference.cache
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\MainMethodAssignment\obj\Debug\MainMethodAssignment.csproj.CoreCompileInputs.cache
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\MainMethodAssignment\obj\Debug\MainMethodAssignment.exe
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\MainMethodAssignment\obj\Debug\MainMethodAssignment.pdb
