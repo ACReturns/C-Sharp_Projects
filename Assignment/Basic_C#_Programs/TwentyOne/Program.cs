@@ -13,19 +13,19 @@ namespace TwentyOne
             Deck deck = new Deck();
             //Shuffle(deck);
             int timesShuffled = 0;
-            deck = Shuffle(deck, out timesShuffled, 3);
+            deck.Shuffle(3);
 
             foreach (Card card in deck.Cards) 
             {
                 Console.WriteLine(card.Face + " of " + card.Suit);
             }
             Console.WriteLine(deck.Cards.Count);
-            Console.WriteLine("Times shuffled: {0}", timesShuffled);
             Console.ReadLine();
         }
-
+        
         // default value assigned so it is an optional parameter
         // out parameters are always before any optional parameters
+        /*
         public static Deck Shuffle(Deck deck, out int timesShuffled, int times = 1) 
         {
             timesShuffled = 0;
@@ -46,5 +46,6 @@ namespace TwentyOne
             }
             return deck;
         }
+        */
     }
 }
