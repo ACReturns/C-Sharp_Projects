@@ -79,6 +79,7 @@ namespace ConsoleAppAssignment
             List<string> attireList = new List<string>() { "hat", "tie", "watch", "jacket", "tie" };
             Console.WriteLine("What would you like to wear today?");
             string userThreads = Console.ReadLine().ToLower();
+            bool invalidEntry = false;
 
             for (int i = 0; i < attireList.Count; i++)
             {
@@ -88,10 +89,10 @@ namespace ConsoleAppAssignment
                 {
                     Console.WriteLine("Your input matches up with the item " + attireList[i]);
                 }
-                else if (!attireList.Contains(userThreads))
+                else if (!attireList.Contains(userThreads) && !invalidEntry)
                 {
                     Console.WriteLine(userThreads + " doesn't exist in the list");
-                    break;
+                    invalidEntry = true;
                 }
             }
             Console.WriteLine("Part 5 Completed");
