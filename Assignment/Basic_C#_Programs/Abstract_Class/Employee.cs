@@ -16,7 +16,8 @@ namespace Abstract_Class
 
 		public override void SayName()
 		{
-			base.SayName();
+			Console.WriteLine("Name: {0} {1}", FirstName, LastName);
+			Console.ReadLine();
 		}
 	}
 }
