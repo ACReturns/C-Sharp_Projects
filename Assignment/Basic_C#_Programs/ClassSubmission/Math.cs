@@ -8,16 +8,17 @@ namespace ClassSubmission
 {
     public class Math
     {
-        public void Divide(out int result, int value)
+        public void Divide(int value)
         {
-            result = value / 2;
+            int result = value / 2;
             Console.WriteLine(value + " / " + 2 + " = " + result);
         }
 
-        public int Divide(int value1, int value2)
+        public int Divide()
         {
-            Console.WriteLine(value1 + " / " + value2 + " = ");
-            return value1 / value2;
+            int result = 100 / 10;
+            Console.WriteLine("100 / 10 = " + result);
+            return result;
         }
     }
 }
