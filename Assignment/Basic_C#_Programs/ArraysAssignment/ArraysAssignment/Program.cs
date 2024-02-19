@@ -31,7 +31,7 @@ namespace ArraysAssignment
             int issueIndex = Convert.ToInt32(Console.ReadLine());
 
             // Checks if the index is greater than the length of the array, if so then it doesn't exist
-            if (issueIndex > comicIssues.Length)
+            if (issueIndex >= comicIssues.Length || issueIndex < 0)
             {
                 Console.WriteLine("There is no comic issue in that index");
             }
@@ -46,7 +46,15 @@ namespace ArraysAssignment
             Console.WriteLine("Please enter an index for a series you enjoy reading/ watching: [0 - 4]");
             int seriesIndex = Convert.ToInt32(Console.ReadLine());
             
-            Console.WriteLine("You selected " + seriesNames[seriesIndex]);
+            if (seriesIndex >= seriesNames.Count || seriesIndex < 0)
+            {
+                Console.WriteLine("You selected " + seriesNames[seriesIndex]);
+                
+            }
+            else
+            {
+                Console.WriteLine("You are out of range with that index number");
+            }
             Console.ReadLine();
         }
     }
