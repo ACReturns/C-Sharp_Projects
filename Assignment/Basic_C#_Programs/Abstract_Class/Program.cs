@@ -12,6 +12,9 @@ namespace Abstract_Class
 		{
 			Employee employee = new Employee() { FirstName = "Sample", LastName = "Student"};
 			employee.SayName();
+
+			IQuittable employee2 = new Employee();
+			employee2.Quit();
 		}
 	}
 }
