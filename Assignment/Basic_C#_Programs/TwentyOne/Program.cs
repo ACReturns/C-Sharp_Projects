@@ -10,9 +10,12 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
+            TwentyOneGame game = new TwentyOneGame();
+            game.Players = new List<string>() { "Don", "Vivi", "Laila" };
+            game.ListPlayers();
+            Console.ReadLine();
+            
             Deck deck = new Deck();
-            //Shuffle(deck);
-            int timesShuffled = 0;
             deck.Shuffle(3);
 
             foreach (Card card in deck.Cards) 
@@ -22,7 +25,8 @@ namespace TwentyOne
             Console.WriteLine(deck.Cards.Count);
             Console.ReadLine();
         }
-        
+
+        #region parameter notes
         // default value assigned so it is an optional parameter
         // out parameters are always before any optional parameters
         /*
@@ -47,5 +51,6 @@ namespace TwentyOne
             return deck;
         }
         */
+        #endregion
     }
 }
