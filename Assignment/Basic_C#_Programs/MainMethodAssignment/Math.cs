@@ -13,9 +13,9 @@ namespace MainMethodAssignment
             return value + 13;
         }
 
-        public decimal DoMath(decimal value) 
+        public int DoMath(decimal value) 
         {
-            return value * 22;
+            return Convert.ToInt32(value * 22);
         }
 
         public int DoMath(string value)
