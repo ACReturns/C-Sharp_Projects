@@ -10,7 +10,7 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
-            TwentyOneGame game = new TwentyOneGame();
+            Game game = new TwentyOneGame(); // Polymorphism
             game.Players = new List<string>() { "Don", "Vivi", "Laila" };
             game.ListPlayers();
             Console.ReadLine();
