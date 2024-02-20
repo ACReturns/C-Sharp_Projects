@@ -23,6 +23,10 @@ namespace ClassSubmission
 			Console.ReadLine();
 
 			StaticClass.Divide(userInput, result);
+
+			result = math.Addition(userInput, out int hidden);
+			Console.WriteLine("The result of " + result + " is due to " + userInput + " + " + hidden);
+			Console.ReadLine();
 		}
 	}
 }
