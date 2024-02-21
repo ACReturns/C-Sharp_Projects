@@ -15,6 +15,15 @@ namespace Abstract_Class
 
 			IQuittable employee2 = new Employee();
 			employee2.Quit();
+
+			Employee employee3 = new Employee() { FirstName = "Sample", LastName = "Student", EmployeeID = 1 };
+			Employee employee4 = new Employee() { FirstName = "Sample", LastName = "Student", EmployeeID = 1 };
+
+			if(employee3.EmployeeID == employee4.EmployeeID)
+			{
+				Console.WriteLine("Employee IDs are the same");
+				Console.ReadLine();
+			}
 		}
 	}
 }
