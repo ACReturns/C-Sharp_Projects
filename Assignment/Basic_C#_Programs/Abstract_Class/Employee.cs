@@ -30,10 +30,15 @@ namespace Abstract_Class
 			return EmployeeEqual;
 		}
 
-		public static bool operator!= (Employee a, Employee b)
+		public static bool operator !=(Employee a, Employee b)
 		{
 			bool EmployeeEqual = !a.EmployeeID.Equals(b.EmployeeID);
 			return EmployeeEqual;
 		}
+	}
+
+	public class Employee<T>
+	{
+		public List<T> things { get; set; }
 	}
 }

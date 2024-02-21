@@ -24,6 +24,22 @@ namespace Abstract_Class
 				Console.WriteLine("Employee IDs are the same");
 				Console.ReadLine();
 			}
+
+			Employee<string> employee5 = new Employee<string>();
+			employee5.things = new List<string>() { "Apple", "Snapple", "Crackle", "Pop" }; 
+
+			Employee<int> employee6 = new Employee<int>();
+			employee6.things = new List<int>() { 2, 4, 6, 9 };
+
+			foreach(string stringThing in employee5.things)
+			{
+				Console.WriteLine("First we have the string " + stringThing);
+			}
+			foreach (int intThing in employee6.things)
+			{
+				Console.WriteLine("Then we have the number " + intThing);
+			}
+			Console.ReadLine();
 		}
 	}
 }
