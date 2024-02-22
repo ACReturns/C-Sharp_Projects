@@ -19,11 +19,10 @@ namespace Abstract_Class
 			Employee employee3 = new Employee() { FirstName = "Sample", LastName = "Student", EmployeeID = 1 };
 			Employee employee4 = new Employee() { FirstName = "Sample", LastName = "Student", EmployeeID = 1 };
 
-			if(employee3.EmployeeID == employee4.EmployeeID)
-			{
-				Console.WriteLine("Employee IDs are the same");
-				Console.ReadLine();
-			}
+			
+			Console.WriteLine(employee3.EmployeeID == employee4.EmployeeID);
+			Console.ReadLine();
+			
 
 			Employee<string> employee5 = new Employee<string>();
 			employee5.things = new List<string>() { "Apple", "Snapple", "Crackle", "Pop" }; 
