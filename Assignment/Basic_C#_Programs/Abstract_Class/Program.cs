@@ -39,6 +39,39 @@ namespace Abstract_Class
 				Console.WriteLine("Then we have the number " + intThing);
 			}
 			Console.ReadLine();
+
+			Employee employee_1 = new Employee() { FirstName = "Viviana", LastName = "Cerda", EmployeeID = 1 };
+			Employee employee_2 = new Employee() { FirstName = "Jermaine", LastName = "Staten", EmployeeID = 2 };
+			Employee employee_3 = new Employee() { FirstName = "Garlic", LastName = "Junior", EmployeeID = 55 };
+			Employee employee_4 = new Employee() { FirstName = "Joe", LastName = "Shmoh", EmployeeID = 14 };
+			Employee employee_5 = new Employee() { FirstName = "Ryan", LastName = "Apple", EmployeeID = 9 };
+			Employee employee_6 = new Employee() { FirstName = "Reggie", LastName = "Bottom", EmployeeID = 3 };
+			Employee employee_7 = new Employee() { FirstName = "Cecilia", LastName = "Genes", EmployeeID = 8 };
+			Employee employee_8 = new Employee() { FirstName = "Joe", LastName = "Smith", EmployeeID = 31 };
+			Employee employee_9 = new Employee() { FirstName = "Bianca", LastName = "Paz", EmployeeID = 40 };
+			Employee employee_10 = new Employee() { FirstName = "Ham", LastName = "Taro", EmployeeID = 60 };
+
+			List<Employee> newHires = new List<Employee>() { employee_1 , employee_2, employee_3, employee_4, employee_5, 
+				employee_6, employee_7, employee_8, employee_9, employee_10 };
+
+
+			List<Employee> onlyJoe = new List<Employee>();
+
+			foreach (var hire in newHires)
+			{
+				if (hire.FirstName == "Joe")
+				{
+					onlyJoe.Add(hire);
+				}
+			}
+
+			Console.WriteLine("The amount of hires with the name Joe are " + onlyJoe.Count());
+			Console.ReadLine();
+
+			List<Employee> justJoe = newHires.Where(x => x.FirstName == "Joe").ToList();
+
+			Console.WriteLine("The amount of hires with the name Joe are " + justJoe.Count());
+			Console.ReadLine();
 		}
 	}
 }
