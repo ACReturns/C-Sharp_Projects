@@ -48,8 +48,8 @@ namespace Abstract_Class
 			Employee employee_6 = new Employee() { FirstName = "Reggie", LastName = "Bottom", EmployeeID = 3 };
 			Employee employee_7 = new Employee() { FirstName = "Cecilia", LastName = "Genes", EmployeeID = 8 };
 			Employee employee_8 = new Employee() { FirstName = "Joe", LastName = "Smith", EmployeeID = 31 };
-			Employee employee_9 = new Employee() { FirstName = "Bianca", LastName = "Paz", EmployeeID = 40 };
-			Employee employee_10 = new Employee() { FirstName = "Ham", LastName = "Taro", EmployeeID = 60 };
+			Employee employee_9 = new Employee() { FirstName = "Bianca", LastName = "Paz", EmployeeID = 4 };
+			Employee employee_10 = new Employee() { FirstName = "Ham", LastName = "Taro", EmployeeID = 0 };
 
 			List<Employee> newHires = new List<Employee>() { employee_1 , employee_2, employee_3, employee_4, employee_5, 
 				employee_6, employee_7, employee_8, employee_9, employee_10 };
@@ -71,6 +71,11 @@ namespace Abstract_Class
 			List<Employee> justJoe = newHires.Where(x => x.FirstName == "Joe").ToList();
 
 			Console.WriteLine("The amount of hires with the name Joe are " + justJoe.Count());
+			Console.ReadLine();
+
+			List<Employee> highID = newHires.Where(x => x.EmployeeID > 5).ToList();
+
+			Console.WriteLine("The number of employee IDs that are higher than 5 are " + highID.Count());
 			Console.ReadLine();
 		}
 	}
