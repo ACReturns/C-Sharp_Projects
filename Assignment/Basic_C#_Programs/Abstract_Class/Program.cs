@@ -20,7 +20,7 @@ namespace Abstract_Class
 			Employee employee4 = new Employee() { FirstName = "Sample", LastName = "Student", EmployeeID = 1 };
 
 			
-			Console.WriteLine(employee3.EmployeeID == employee4.EmployeeID);
+			Console.WriteLine(employee3 == employee4);
 			Console.ReadLine();
 			
 
