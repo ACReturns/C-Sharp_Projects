@@ -10,6 +10,32 @@ namespace TwentyOne
 	{
 		static void Main(string[] args)
 		{
+			Console.WriteLine("Welcome to the table, please tell me your name.");
+			string playerName = Console.ReadLine();
+
+			Console.WriteLine("How much are you looking to spend today?");
+			int playerMoney = Convert.ToInt32(Console.ReadLine());
+
+			Console.WriteLine("Hello {0}, do you want to play a game of 21?", playerName);
+			string playerAnswer = Console.ReadLine().ToLower();
+
+			if (playerAnswer == "yes" || playerAnswer == "yeah" || playerAnswer == "ya" || playerAnswer == "y")
+			{
+				Player player = new Player(playerName, playerMoney);
+				Game game = new TwentyOneGame();
+				game += player;
+				player.isActivelyPlaying = true;
+
+				while (player.isActivelyPlaying && player.Balance > 0)
+				{
+					game.Play();
+				}
+				game -= player;
+				Console.WriteLine("Thanks for playing!");
+			}
+			Console.WriteLine("Feel free to look around, bye for now.");
+			Console.ReadLine();
+
 			/*Game game = new TwentyOneGame(); // Polymorphism
 			game.Players = new List<Player>(); // With lists you need to instansiate it if inherited in order to add to it
 			game.ListPlayers();
