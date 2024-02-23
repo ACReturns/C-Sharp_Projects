@@ -6,15 +6,34 @@ using System.Threading.Tasks;
 
 namespace TwentyOne
 {
-    public class Card
-    {
-        public Card()
-        {
-            Suit = "Spades";
-            Face = "2";
-        }
+	public struct Card
+	{
+		public Suit Suit { get; set; }
+		public Face Face { get; set; }
+	}
 
-        public string Suit { get; set; }
-        public string Face { get; set; }
-    }
+	public enum Suit
+	{
+		Spade,
+		Clubs,
+		Diamonds,
+		Hearts
+	}
+
+	public enum Face
+	{
+		Two,
+		Three,
+		Four,
+		Five,
+		Six,
+		Seven,
+		Eight,
+		Nine,
+		Ten,
+		Jack,
+		Queen,
+		King,
+		Ace
+	}
 }

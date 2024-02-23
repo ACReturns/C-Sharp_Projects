@@ -11,22 +11,21 @@ namespace TwentyOne
 		public Deck() 
 		{
             Cards = new List<Card>();
-            string[] Faces = { "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", 
-				"Nine", "Ten", "Jack", "Queen", "King", "Ace" };
-			string[] Suits = { "Spades", "Hearts", "Diamonds", "Clubs" };
 
-			foreach (string Face in Faces) 
-			{
-				foreach (string Suit in Suits) 
-				{
+            for(int i = 0; i < 13; i++) 
+            {
+                for(int f = 0;  f < 4; f++)
+                {
                     Card card = new Card();
-                    card.Face = Face;
-                    card.Suit = Suit;
+                    card.Face = (Face)f;
+                    card.Suit = (Suit)i;
                     Cards.Add(card);
                 }
-			}
+            }
 		}
+
 		public List<Card> Cards {  get; set; }
+
         // Class Method
         public void Shuffle(int times = 1)
         {
