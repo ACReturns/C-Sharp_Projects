@@ -11,10 +11,11 @@ namespace DaysOfTheWeek
 		static void Main(string[] args)
 		{
 			Console.WriteLine("Enter the current day of the week:");
+			DaysOfTheWeek day = (DaysOfTheWeek)Enum.Parse(typeof(DaysOfTheWeek), Console.ReadLine());
 
 			try
 			{
-				Console.WriteLine("The day you entered was " + Enum.Parse(typeof(DaysOfTheWeek), Console.ReadLine()));
+				Console.WriteLine("The day you entered was " + day);
 			}
 			catch (Exception ex) 
 			{

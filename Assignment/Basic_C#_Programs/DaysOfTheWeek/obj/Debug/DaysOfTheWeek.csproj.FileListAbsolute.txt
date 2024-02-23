@@ -1,0 +1,3 @@
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\DaysOfTheWeek\obj\Debug\DaysOfTheWeek.exe
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\DaysOfTheWeek\obj\Debug\DaysOfTheWeek.csproj.AssemblyReference.cache
+D:\Github\C-Sharp_Projects\Assignment\Basic_C#_Programs\DaysOfTheWeek\obj\Debug\DaysOfTheWeek.csproj.CoreCompileInputs.cache
