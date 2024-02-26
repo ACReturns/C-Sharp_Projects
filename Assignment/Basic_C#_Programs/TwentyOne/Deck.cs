@@ -12,13 +12,13 @@ namespace TwentyOne
 		{
             Cards = new List<Card>();
 
-            for(int i = 0; i < 13; i++) 
+            for(int s = 0; s < 4; s++) 
             {
-                for(int f = 0;  f < 4; f++)
+                for(int f = 0;  f < 13; f++)
                 {
                     Card card = new Card();
                     card.Face = (Face)f;
-                    card.Suit = (Suit)i;
+                    card.Suit = (Suit)s;
                     Cards.Add(card);
                 }
             }

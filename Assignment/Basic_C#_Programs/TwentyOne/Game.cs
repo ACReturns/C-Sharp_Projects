@@ -8,10 +8,23 @@ namespace TwentyOne
 {
 	public abstract class Game
 	{
-		public List<Player> Players { get; set; }
 		public string Name { get; set; }
-		public Dictionary<Player, int> Bets { get; set; }
 
+		private Dictionary<Player, int> _bets = new Dictionary<Player, int>();
+		public Dictionary<Player, int> Bets 
+		{ 
+			get { return _bets; }  
+			set { _bets = value; } 
+		}
+
+
+		private List<Player> _players = new List<Player>();
+		public List<Player> Players 
+		{ 
+			get { return _players; } 
+			set { _players = value; } 
+		}
+		
 		public abstract void Play();
 
 		public virtual void ListPlayers()

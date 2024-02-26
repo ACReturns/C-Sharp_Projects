@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,31 +35,6 @@ namespace TwentyOne
 				Console.WriteLine("Thanks for playing!");
 			}
 			Console.WriteLine("Feel free to look around, bye for now.");
-			Console.ReadLine();
-
-			/*Game game = new TwentyOneGame(); // Polymorphism
-			game.Players = new List<Player>(); // With lists you need to instansiate it if inherited in order to add to it
-			game.ListPlayers();
-			Console.ReadLine();
-			Player player = new Player();
-			player.Name = "Don";
-			game += player; // shorthand for game = game + player;*/
-			
-			Deck deck = new Deck();
-			deck.Shuffle(3);
-
-			int count = deck.Cards.Count(x => x.Face == Face.Ace); // Gets all Aces count
-
-			List<Card> newList = deck.Cards.Where(x => x.Face == Face.King).ToList(); // Creates new list for the Kings
-
-			List<int> numberList = new List<int>() { 1, 2, 3, 4, 5, 6, 7 };
-			int sum = numberList.Sum(); // adds them all together
-
-			foreach (Card card in deck.Cards)
-			{
-				Console.WriteLine(card.Face + " of " + card.Suit);
-			}
-			Console.WriteLine(deck.Cards.Count);
 			Console.ReadLine();
 		}
 
